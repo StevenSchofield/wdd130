@@ -1,0 +1,25 @@
+:root {
+    --dark: #6d6d6d;
+    --darker: #414141;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+}
+
+header img {
+    width: 100%;
+    padding: 0;
+}
+
+section {
+    text-align: center;
+}
+
+.icon {
+    border: 1em solid var(--darker);
+    border-radius: 50%;
+    width: 20%;
+    margin: 4%;
+}
