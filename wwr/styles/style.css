@@ -1,17 +1,27 @@
+:root {
+    --primary-color: #d81e5b;
+    --secondary-color: #00f6ed;
+    --accent1: #d3c4d1;
+    --accent2: #c9b7ad;
+    --dark-color: #3A3335;
+    --light-color: white;
+}
+
+
 body {
-    background-color: #d3c4d1;
+    background-color: var(--accent1);
 }
 
 header {
-    background-color: #00f6ed;
+    background-color: var(--secondary-color);
 }
 
 footer {
-    background-color: #c9b7ad;
+    background-color: var(--accent2);
 }
 
 footer h3 {
-    color: #3A3335
+    color: var(--dark-color);
 }
 
 footer h3:hover {
@@ -20,15 +30,19 @@ footer h3:hover {
 
 footer a {
     text-decoration: none;
-    color: #00f6ed;
+    color: var(--secondary-color);
 }
 
 footer a:hover {
-    color: #d81e5b;
+    color: var(--primary-color);
 }
 
 .home-title {
-    color: #d81e5b;
+    color: var(--primary-color);
+}
+
+.logo {
+    width: 80px;
 }
 
 #content {
@@ -39,27 +53,27 @@ footer a:hover {
 nav a {
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: var(--accent2);
 }
 
 nav a:hover {
-    background-color: #d3c4d1;
-    color: #3A3335;
+    background-color: var(--accent1);
+    color: var(--dark-color);
 }
 
 h4 {
-    color: #d81e5b;
+    color: var(--primary-color);
 }
 
 .book, .join {
     text-decoration: none;
-    background-color: #c9b7ad;
-    color: white;
+    background-color: var(--accent2);
+    color: var(--light-color);
 }
 
 .book:hover, .join:hover {
-    background-color: #d3c4d1;
-    color: #3A3335;
+    background-color: var(--accent1);
+    color: var(--dark-color);
 }
 
 .icon {
@@ -84,17 +98,17 @@ main section {
 
 #background {
     height: 725px;
-    background-color: #d81e5b;
+    background-color: var(--primary-color);
 }
 
 .msg {
-    background-color: 	#00f6ed;
+    background-color: 	var(--secondary-color);
 }
 
 .msg h2 {
-    color: #d81e5b;
+    color: var(--primary-color);
 }
 
 .msg p {
-    color: #3A3335;
+    color: var(--dark-color);
 }
