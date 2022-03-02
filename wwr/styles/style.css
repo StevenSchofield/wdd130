@@ -137,7 +137,7 @@ main section {
 
 .question {
     background-color: var(--accent2);
-    margin: 0px auto 100px auto;
+    margin: 0px auto 50px auto;
     padding: 1em;
     text-align: left;
     box-shadow: 5px 5px 10px var(--dark-color);
