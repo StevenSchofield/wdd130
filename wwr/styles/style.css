@@ -28,6 +28,7 @@ header {
 
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
+    margin: 1em;
 }
 
 h2 {
@@ -212,6 +213,32 @@ main section img {
     color: var(--dark-color);
     font-size: .8em;
     padding-bottom: 15px;
+}
+
+form {
+    box-sizing: border-box;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+form label,
+form input, 
+form textarea,
+form button {
+    display: block;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 0.5rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 0.75rem;
 }
 
 footer {
