@@ -233,7 +233,7 @@ main section img {
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 40rem;
+    width: 400px;
     /* Form outline */
     padding: 1em;
     border: 1px solid #CCC;
