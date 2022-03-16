@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #ACCBE1;
+    --secondary-color: #7C98B3;
+    --accent1-color: #637081;
+    --accent2-color: #CEE5F2;
+  
+    --heading-font: 'Cinzel', serif;
+    --paragraph-font: 'Raleway', Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    margin: 0 0;
+}
+
+header {
+    padding: 5px;
+}
+
+.logo {
+    float: left;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
