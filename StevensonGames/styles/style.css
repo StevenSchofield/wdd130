@@ -17,7 +17,7 @@ body {
     font-family: var(--paragraph-font);
     background-color: var(--primary-color);
     margin: 0;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 header {
@@ -50,6 +50,7 @@ nav a:hover {
 
 #hero {
     background-color: var(--accent1-color);
+    text-shadow: 5px 5px 10px black;
 }
 
 #page-name {
@@ -57,6 +58,7 @@ nav a:hover {
     text-align: center;
     margin: 0 auto;
     padding: 10px;
+    font-size: 2em;
 }
 
 #hero div {
@@ -74,7 +76,6 @@ nav a:hover {
     background-color: var(--secondary-color);
     color: white;
 
-    font-size: 1.5em;
     padding: 0.5em;
 
     grid-area: 2/2/3/3;
@@ -84,3 +85,88 @@ nav a:hover {
     box-shadow: 5px 5px 10px black;
 }
 
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    margin: 3em auto;
+    justify-items: center;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: 0;
+    text-align: center;
+    transition: transform .5s;
+    border-radius: 1em;
+    border: 5px solid var(--accent1-color);
+    box-shadow: 5px 5px 10px black;
+}
+
+.card a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin: 0;
+}
+
+.card img {
+    width: 350px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#featured-card {
+    grid-column: 2/3;
+}
+
+#progress-card {
+    grid-column: 4/5;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3{
+    padding-left: 10px;
+}
+
+footer h3,
+footer a {
+    margin: auto;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social img {
+    width: 100px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero div {
+        display: block;
+        background-color: var(--primary-color);
+    }
+
+    #cards {
+        display: block;
+        margin: 0;
+    }
+
+    .card {
+        width: 50%;
+        margin: 40px auto;
+    }
+}
