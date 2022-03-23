@@ -126,6 +126,61 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+#display-grid {
+    display: flex;
+}
+
+.game-container {
+    position: relative;
+    border: 5px solid var(--accent1-color);
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px black;
+    background-color: var(--secondary-color);
+    width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.underlay {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+.underlay p {
+    height: 2em;
+}
+
+.underlay img {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--secondary-color);
+}
+
+.game-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    padding: 10px;
+}
 
 footer {
     background-color: var(--accent1-color);
