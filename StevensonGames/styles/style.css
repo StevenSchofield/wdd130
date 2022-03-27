@@ -72,7 +72,7 @@ nav a:hover {
     grid-area: 1/1/4/-1;
 }
 
-#hero p {
+#hero p, #blurb {
     background-color: var(--secondary-color);
     color: white;
 
@@ -137,6 +137,7 @@ nav a:hover {
     box-shadow: 5px 5px 10px black;
     background-color: var(--secondary-color);
     width: 350px;
+    height: 500px;
     margin: 30px auto;
     text-align: center;
     overflow: hidden;
@@ -177,7 +178,7 @@ nav a:hover {
 }
 
 .text {
-    color: white;
+    color: var(--accent2-color);
     position: absolute;
     padding: 10px;
 }
@@ -215,7 +216,7 @@ footer a:hover {
         background-color: var(--primary-color);
     }
 
-    #cards {
+    #cards, #display-grid {
         display: block;
         margin: 0;
     }
